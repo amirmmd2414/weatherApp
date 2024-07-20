@@ -17,6 +17,9 @@ public:
     wetherApp(QWidget *parent = nullptr);
     ~wetherApp();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::wetherApp *ui;
 };
