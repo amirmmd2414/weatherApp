@@ -2,7 +2,7 @@
 #define WETHERAPP_H
 
 #include <QMainWindow>
-
+#include "cityapi.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class wetherApp;
@@ -22,5 +22,11 @@ private slots:
 
 private:
     Ui::wetherApp *ui;
+private:
+    CityAPI _TOKYO_();
+    CityAPI _TEHRAN_();
+    CityAPI _MOSCOW_();
+    CityAPI _WASHAIGTON_();
+
 };
 #endif // WETHERAPP_H

@@ -28,6 +28,8 @@ public:
     QLabel *city_picture;
     QComboBox *comboBox;
     QPushButton *pushButton;
+    QLabel *label_3;
+    QLabel *label_4;
 
     void setupUi(QMainWindow *wetherApp)
     {
@@ -68,6 +70,12 @@ public:
 "font: 900 9pt \"Segoe UI Black\" ;\n"
 "color:rgb(0, 0, 0);\n"
 "border: 1px solid gray;"));
+        label_3 = new QLabel(centralwidget);
+        label_3->setObjectName("label_3");
+        label_3->setGeometry(QRect(100, 90, 311, 161));
+        label_4 = new QLabel(centralwidget);
+        label_4->setObjectName("label_4");
+        label_4->setGeometry(QRect(100, 280, 311, 111));
         wetherApp->setCentralWidget(centralwidget);
 
         retranslateUi(wetherApp);
@@ -87,6 +95,8 @@ public:
         comboBox->setItemText(3, QCoreApplication::translate("wetherApp", "moscow", nullptr));
 
         pushButton->setText(QCoreApplication::translate("wetherApp", "Exit", nullptr));
+        label_3->setText(QCoreApplication::translate("wetherApp", "TextLabel", nullptr));
+        label_4->setText(QCoreApplication::translate("wetherApp", "TextLabel", nullptr));
     } // retranslateUi
 
 };
